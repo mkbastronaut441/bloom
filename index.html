@@ -157,6 +157,7 @@ textarea{resize:none;line-height:1.7}
 .surprise-ey{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--rose);margin-bottom:5px}
 .surprise-title{font-family:'Cormorant Garamond',serif;font-size:30px;margin-bottom:6px}
 .surprise-copy{font-size:13px;color:var(--muted);line-height:1.6}
+.surprise-card,.d-song,.food-box-shell,.food-base,.food-lid,.d-se{min-width:0}
 .food-box{margin-top:14px;cursor:pointer;user-select:none}
 .food-box-shell{position:relative;max-width:360px;margin:0 auto}
 .food-lid{height:62px;border-radius:26px 26px 14px 14px;background:linear-gradient(180deg,#ffdbe6,#f3a8bc);border:1px solid rgba(214,122,151,.22);box-shadow:0 14px 24px rgba(214,122,151,.18);display:flex;align-items:center;justify-content:center;font-weight:600;color:#9e556b;transform-origin:bottom center;transition:transform .45s ease,opacity .25s ease;letter-spacing:.04em}
@@ -174,7 +175,7 @@ textarea{resize:none;line-height:1.7}
 .d-dp .d-ds{font-size:11px}
 .d-song{margin-top:14px;border:1px solid rgba(107,79,58,.12);border-radius:18px;padding:16px;background:rgba(255,255,255,.72)}
 .d-sl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:4px}
-.d-sn{font-family:'Cormorant Garamond',serif;font-size:20px}
+.d-sn{font-family:'Cormorant Garamond',serif;font-size:20px;overflow-wrap:anywhere;word-break:break-word}
 .d-se{margin-top:10px;border-radius:12px;overflow:hidden}
 .d-msg{margin:22px 0;background:rgba(255,255,255,.84);border:1px solid rgba(192,90,110,.14);border-radius:22px;padding:22px 24px;font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;line-height:1.7}
 .d-acts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
@@ -225,6 +226,7 @@ nav{padding:12px 14px}
 .hero p{font-size:14px}
 .hero-links{flex-direction:column}
 .hero-links a,.hero-links span{width:100%}
+.container{padding:0 12px 72px}
 .bouquet-stage{padding:14px 8px 14px}
 #bouquet-svg{width:100%;height:auto}
 .step{padding:18px 14px}
@@ -232,10 +234,21 @@ nav{padding:12px 14px}
 .flower-picker,.wrap-grid,.dish-picker{grid-template-columns:1fr}
 .f-card,.wrap-card,.d-card{max-width:none}
 .send-btn{width:100%;justify-content:center;padding:15px 24px}
+.del-inner{max-width:100%;padding:28px 12px 48px;overflow-x:hidden}
+.bq-reveal{width:100%}
+#del-svg{width:min(100%,280px);height:auto}
+.d-reveal{gap:12px}
 .surprise-title{font-size:24px}
-.surprise-card{padding:16px}
-.food-box-shell{max-width:100%}
+.surprise-card{padding:14px;overflow:hidden}
+.surprise-copy,.food-box-copy,.food-box-hint,.d-ds,.song-meta p{overflow-wrap:anywhere}
+.food-box-shell,.d-song,.d-se{max-width:100%;width:100%}
+.food-lid{height:56px;padding:0 14px;font-size:12px;text-align:center}
+.food-base{padding:18px 10px 14px}
 .d-dishes{grid-template-columns:1fr}
+.d-dp{padding:10px 8px}
+.d-sn{font-size:17px;line-height:1.35}
+.d-song{padding:12px}
+.d-msg{padding:18px 16px;font-size:19px}
 .d-acts{flex-direction:column}
 .ba,.bb{width:100%}
 .support-pop{padding:14px}
